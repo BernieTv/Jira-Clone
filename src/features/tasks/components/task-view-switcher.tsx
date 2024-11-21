@@ -20,7 +20,7 @@ import { columns } from './columns';
 
 import { TaskStatus } from '../types';
 import { useBulkUpdateTasks } from '../api/use-bulk-update-tasks';
-import { DataCalander } from './data-calander';
+import { DataCalendar } from './data-calendar';
 
 interface TaskViewSwitcherProps {
   hideProjectFilter?: boolean;
@@ -120,7 +120,7 @@ export const TaskViewSwitcher = ({
             </TabsContent>
 
             <TabsContent value="calendar" className="mt-0 h-full pb-4">
-              <DataCalander data={tasks?.documents ?? []} />
+              <DataCalendar data={tasks?.documents ?? []} />
             </TabsContent>
           </>
         )}
