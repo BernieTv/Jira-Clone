@@ -219,7 +219,7 @@ const app = new Hono()
         c.req.valid('json');
       const { taskId } = c.req.param();
 
-      const exisistingTask = await databases.getDocument<Task>(
+      const existingTask = await databases.getDocument<Task>(
         DATABASE_ID,
         TASKS_ID,
         taskId,
@@ -227,7 +227,7 @@ const app = new Hono()
 
       const member = await getMember({
         databases,
-        workspaceId: exisistingTask.workspaceId,
+        workspaceId: existingTask.workspaceId,
         userId: user.$id,
       });
 
