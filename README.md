@@ -1,4 +1,4 @@
-# Built a Fullstack Jira Clone with NextJS, TailwindCSS and Appwrite
+# Jira Clone build with NextJS, TailwindCSS, HonoJS and Appwrite
 
 ![Screenshot 2024-10-12 183257](https://github.com/user-attachments/assets/cc42f737-69b8-424c-b89d-685061dd8018)
 
@@ -32,7 +32,7 @@ Key Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/BernieTv/jira-clone.git
+git clone https://github.com/BernieTv/Jira-Clone.git
 ```
 
 ### Install packages
