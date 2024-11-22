@@ -25,7 +25,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { type RegisterSchema, registerSchema } from '../schemas';
 import { useRegister } from '../api/use-register';
-import { signUpWithGithub } from '@/lib/oauth';
+import { signUpWithGithub, signUpWithGoogle } from '@/lib/oauth';
 
 export const SignUpCard = () => {
   const { mutate, isPending } = useRegister();
@@ -131,13 +131,14 @@ export const SignUpCard = () => {
 
       <CardContent className="p-7 flex flex-col gap-y-2">
         <Button
+          onClick={() => signUpWithGoogle()}
           disabled={isPending}
           variant="secondary"
           size="lg"
           className="w-full"
         >
           <FcGoogle className="size-5 mr-2" />
-          Login with Google
+          Sign Up with Google
         </Button>
 
         <Button
@@ -148,7 +149,7 @@ export const SignUpCard = () => {
           className="w-full"
         >
           <FaGithub className="size-5 mr-2" />
-          Login with Github
+          Sign Up with Github
         </Button>
       </CardContent>
 
