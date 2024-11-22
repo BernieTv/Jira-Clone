@@ -38,6 +38,7 @@ interface CustomToolbarProps {
   onNavigate: (action: 'PREV' | 'NEXT' | 'TODAY') => void;
   date: Date;
 }
+
 const CustomToolbar = ({ onNavigate, date }: CustomToolbarProps) => {
   return (
     <div className="flex bg-4 gap-x-2 items-center w-full lg:w-auto justify-center lg:justify-start">
